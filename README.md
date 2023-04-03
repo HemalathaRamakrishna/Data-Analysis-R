@@ -84,5 +84,5 @@ max(data_videogamesales$Global_Sales, na.rm=TRUE)
 min(data_videogamesales$Global_Sales, na.rm=TRUE)
 sd(data_videogamesales$Global_Sales, na.rm=TRUE)
 ```
-![summary 3](https://user-images.githubusercontent.com/122247029/229646870-038aa7a0-e03f-41cc-83ac-0a7f39d60300.PNG) <br>
+![summary 3](https://user-images.githubusercontent.com/122247029/229647029-1bdf48b9-8e4c-4c8a-a25d-90a1e07b08dd.PNG) <br>
 
