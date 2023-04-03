@@ -61,3 +61,12 @@ Developer, sep=" / ")
 ```
 ![line chart](https://user-images.githubusercontent.com/122247029/229645888-6552a491-48a0-4c11-8972-c68a9cf6b737.PNG)<br>
 
+## Summary Statistics
+Code for summary statistics in R Studio
+```
+>  summary(data_videogamesales)
+```
+Code for Statistical analysis of the variable Global_Sales in R Studio 
+```
+>summary(data_videogamesales$Global_Sales)
+```
