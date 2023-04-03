@@ -6,32 +6,32 @@ The goal of this project is to analyze the video game sales data and gain insigh
 
 ## Data Cleaning
 **1. Deleting Unwanted Columns**<br>
-Code to set the working directory and read the date in R Studio
+**Code to set the working directory and read the date in R Studio**
 ```
 > setwd("C:/Users/Hemalatha/Music/College/Semester 3/5250/R Project/Data")
 > data_videogamesales<-read.csv("Video_Games_Sales.csv")
 > View(data_videogamesales)
 ```
-Code to delete the column in R Studio
+**Code to delete the column in R Studio**
 ```
 > delete_column1<-data_videogamesales[,2:ncol(data_videogamesales)]
 > View(delete_column1)
 ```
 
 **2. Splitting the column**<br>
-Installing tidyr package
+**Installing tidyr package**
 ```
 > install.packages("tidyr")
 
 ```
-Code to split the column in R Studio
+**Code to split the column in R Studio**
 ```
 > dates_columnsplit<-separate(data_videogamesales,Date_of_Release,c("Month","Date","Year"),sep="/")
 > View(dates_columnsplit)
 ```
 
 **3. Merging two columns**<br>
-Code to merge two columns in R Studio
+**Code to merge two columns in R Studio**
 ```
 > combine_data_column<-unite(delete_column1,Publisher_and_Developer,Publisher, 
 Developer, sep=" / ")
@@ -62,19 +62,19 @@ Developer, sep=" / ")
 ![line chart](https://user-images.githubusercontent.com/122247029/229645888-6552a491-48a0-4c11-8972-c68a9cf6b737.PNG)<br>
 
 ## Summary Statistics
-Code for summary statistics in R Studio
+**Code for summary statistics in R Studio**
 ```
 >  summary(data_videogamesales)
 ```
 ![summary](https://user-images.githubusercontent.com/122247029/229646452-cd48389b-d026-42b4-88a2-1a086e321a2b.PNG)<br>
 
-Code for Statistical analysis of the variable Global_Sales in R Studio 
+**Code for Statistical analysis of the variable Global_Sales in R Studio **
 ```
 >summary(data_videogamesales$Global_Sales)
 ```
 ![summary 2](https://user-images.githubusercontent.com/122247029/229646463-a02cc54b-0fb5-49e4-ad39-e3520d82c97e.PNG)<br>
 
-Code for individual Statistical analysis of the variable Global_Sales in R Studio 
+**Code for individual Statistical analysis of the variable Global_Sales in R Studio **
 ```
 getwd()
 data_videogamesales<-read.csv("Video_Games_Sales.csv", header=TRUE, sep=",")
