@@ -66,7 +66,22 @@ Code for summary statistics in R Studio
 ```
 >  summary(data_videogamesales)
 ```
+![summary](https://user-images.githubusercontent.com/122247029/229646452-cd48389b-d026-42b4-88a2-1a086e321a2b.PNG)<br>
+
 Code for Statistical analysis of the variable Global_Sales in R Studio 
 ```
 >summary(data_videogamesales$Global_Sales)
 ```
+![summary 2](https://user-images.githubusercontent.com/122247029/229646463-a02cc54b-0fb5-49e4-ad39-e3520d82c97e.PNG)<br>
+
+Code for individual Statistical analysis of the variable Global_Sales in R Studio 
+```
+getwd()
+data_videogamesales<-read.csv("Video_Games_Sales.csv", header=TRUE, sep=",")
+mean(data_videogamesales$Global_Sales, na.rm=TRUE)
+median(data_videogamesales$Global_Sales, na.rm=TRUE)
+max(data_videogamesales$Global_Sales, na.rm=TRUE)
+min(data_videogamesales$Global_Sales, na.rm=TRUE)
+sd(data_videogamesales$Global_Sales, na.rm=TRUE)
+```
+![summary 3](https://user-images.githubusercontent.com/122247029/229646465-79251acf-4c4e-49a6-b335-1918c38890eb.PNG
