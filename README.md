@@ -37,3 +37,25 @@ Code to merge two columns in R Studio
 Developer, sep=" / ")
 > View(combine_data_column)
 ```
+
+## Data Analysis and Visualizations
+**1. Which game genres have gained the most popularity in the gaming community?** 
+```
+> View(data_videogamesales)
+> b<-ggplot(data_videogamesales, aes(x="Genre", fill=Genre))+geom_bar()
+> b+geom_bar()
+> ggplot(data_videogamesales, aes(Genre))+geom_bar()+coord_flip()
+> ggplot(data_videogamesales, aes(Genre, fill=Genre))+geom_bar()+coord_flip()
+```
+
+**2. How have “Video games” evolved since their inception in the 1980s?** 
+```
+>  ggplot(data_videogamesales, aes(Year_of_Release)) + geom_histogram(binwidth=0.5) 
+```
+
+**3 How did the games generate revenue globally during their evolution as an industry??** 
+```
+> ggplot(data_videogamesales, aes(Year_of_Release, Global_Sales)) + geom_line()
+```
+
+
