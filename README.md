@@ -47,15 +47,17 @@ Developer, sep=" / ")
 > ggplot(data_videogamesales, aes(Genre))+geom_bar()+coord_flip()
 > ggplot(data_videogamesales, aes(Genre, fill=Genre))+geom_bar()+coord_flip()
 ```
+![bar chart](https://user-images.githubusercontent.com/122247029/229645879-b92b51b5-bbd9-451f-b78e-b4790ce8f218.PNG) <br>
 
 **2. How have “Video games” evolved since their inception in the 1980s?** 
 ```
 >  ggplot(data_videogamesales, aes(Year_of_Release)) + geom_histogram(binwidth=0.5) 
 ```
+![histogram](https://user-images.githubusercontent.com/122247029/229645885-5746cc05-474f-4791-9620-3add064632ea.PNG)<br>
 
 **3 How did the games generate revenue globally during their evolution as an industry??** 
 ```
 > ggplot(data_videogamesales, aes(Year_of_Release, Global_Sales)) + geom_line()
 ```
-
+![line chart](https://user-images.githubusercontent.com/122247029/229645888-6552a491-48a0-4c11-8972-c68a9cf6b737.PNG)<br>
 
